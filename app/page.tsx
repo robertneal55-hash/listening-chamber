@@ -1,7 +1,9 @@
-export default function Home() {
+import "./globals.css";
+
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <main>
-      <h1>Listening Chamber</h1>
-    </main>
+    <html lang="en">
+      <body>{children}</body>
+    </html>
   );
 }
